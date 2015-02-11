@@ -1,0 +1,4 @@
+{{#each post in model}}
+  {{#link-to 'post' post}}<h2>{{post.title}}</h2>{{/link-to}}
+  by <strong>{{post.user.name}}</strong>
+{{/each}}
