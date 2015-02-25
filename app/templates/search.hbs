@@ -1,0 +1,10 @@
+{{input value = query}}
+<button {{action 'search'}}>Search</button>
+
+{{#each post in model}}
+  <h2>{{post.title}}</h2>
+
+{{else}}
+  <h2>Nothing here</h2>
+{{/each}}
+{{outlet}}
